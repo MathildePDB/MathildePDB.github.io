@@ -31,8 +31,11 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
+    .justify-content-arround {
+      align-items: center;
+    }
     .w-40 {
-        width: 100%;
+        width: 90%;
     }
     .card {
         width: auto;
