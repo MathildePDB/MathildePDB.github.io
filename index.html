@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/squares.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="bg-blue px-20">
+        <div class="d-none-desktop">
+            <nav class="sidenav" id="mySidenav">
+                <a id="closeBtn" href="#" class="close"><img src="assets/images/icones/close.png" alt="" class="mini"></a>
+                <ul class="menu-items">
+                    <li><a class="m-1 p-1 px-2" href="#competences">Compétences</a></li>
+                    <li><a class="m-1 p-1 px-2" href="#formation">Formation</a></li>
+                    <li><a class="m-1 p-1 px-2" href="#experience">Expérience</a></li>
+                    <li><a class="m-1 p-1 px-2" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="p-2 bg-blue" id="navbar-hamburger">
+                <a href="#" id="openBtn"><img src="assets/images/icones/hamburger.png" alt="" class="mini"></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between py-2">
+            <div class="d-flex flex-col py-2">
+                <img src="assets/images/icones/round01.png" class="mini img-title d-none-mobile">
+                <h1 class="text-white titles">Mathilde</h1>
+                <h1 class="caps text-white py-1">Pierre dit Blanchet</h1>
+                <h2 class="text-salmon py-1">Conceptrice développeuse d'applicaitons</h2>
+            </div>
+            <div class="d-flex py-2 responsive-row">
+                <p class="text-white align-self-center">Disponible du 02/05/2023 <br> au 21/07/2023</p>
+                <div class="bg-round-1 p-1">
+                    <img src="assets/images/icones/calendar.png" alt="" class="logo">
+                </div>
+            </div>   
+        </div>
+        <div class="d-flex justify-content-between align-items-center py-2 no-p">
+            <p class="text-white p-responsive">Actuellement en formation, je suis à la recherche d'un stage
+                de fin d'étude pour valider mon diplôme</p>
+            <div class="d-flex align-items-center responsive-row">
+                <div class="bg-round-2 p-1">
+                    <img src="assets/images/icones/location.png" alt="" class="logo">
+                </div>
+                <p class="text-white px-2">Angoulême</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center py-2" id="competences">
+            <div>
+                <a class="text-white btn btn-two m-1 p-1 px-2" href="assets/CV_M_Pierre_dit_Blanchet.pdf" download target="_blank">Télécharger le CV</a>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-salmon d-none-mobile" id="navbar">
+        <ul class="d-flex justify-content-evenly p-1">
+            <li><a class="btn btn-one m-1 p-1 px-2" href="#competences">Compétences</a></li>
+            <li><a class="btn btn-one m-1 p-1 px-2" href="#formation">Formation</a></li>
+            <li><a class="btn btn-one m-1 p-1 px-2" href="#experience">Expérience</a></li>
+            <li><a class="btn btn-one m-1 p-1 px-2" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="pb-5">
+            <div class="bg-blue d-flex justify-content-between align-items-center px-20 py-2 responsive-title">
+                <h2 class="text-white">Compétences</h2>
+                <img src="assets/images/icones/competences.png" alt="" class="mini">
+            </div>  
+            <div class="px-20 py-5"><!-- portfolio -->
+                <div class="d-flex">
+                    <div class="card m-1">
+                        <div class="content">
+                            <h2 class="title text-blue">Kanité</h2>
+                            <p class="copy">Site e-commerce WordPress - stagiaire </p>
+                            <a href="https://kanite-naturel.com/" target="_blank" class="btn btn-one">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="card m-1">
+                        <div class="content">
+                            <h2 class="title text-blue">Cheun'Apan</h2>
+                            <p class="copy">Site vitrine - stagiaire refonte design</p>
+                            <a href="https://www.cheunapan-education-canine.fr/" target="_blank" class="btn btn-one">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="card m-1">
+                        <div class="content">
+                            <h2 class="title text-blue">Ecole Montessori Albi</h2>
+                            <p class="copy">Site vitrine - stagiaire création design Wordpress gutenberg</p>
+                            <a href="https://www.grandiravecmontessori.fr/" target="_blank" class="btn btn-one">Visiter</a>
+                        </div>
+                    </div>
+                    <div class="card m-1">
+                        <div class="content">
+                            <h2 class="title text-blue">Projet Apprenant</h2>
+                            <p class="copy">Projet formation - Symfony6 MySql Javascript</p>
+                            <a href="http://www.groupe1.jpb-web.fr/" target="_blank" class="btn btn-one">Visiter</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="px-20 py-5">
+                <div class="d-flex justify-content-center">
+                    <div class="square m-1" id="html">
+                        <p class="txtcontenu"><b>HTML 5</b></p>
+                    </div>
+                    <div class="square m-1" id="css">
+                        <p class="txtcontenu"><b>CSS 3</b></p>
+                    </div>
+                    <div class="square m-1" id="php">
+                        <p class="txtcontenu"><b>PHP 8</b></p>
+                    </div>
+                    <div class="square m-1" id="mysql">
+                        <p class="txtcontenu"><b>MySql</b></p>
+                    </div>
+                    <div class="square m-1" id="postgre">
+                        <p class="txtcontenu"><b>PostgreSql</b></p>
+                    </div>
+                    <div class="square m-1" id="js">
+                        <p class="txtcontenu"><b>Javascript</b></p>
+                    </div>
+                    <div class="square m-1" id="csharp">
+                        <p class="txtcontenu"><b>C#</b></p>
+                    </div>
+                    <div class="square m-1" id="symfony">
+                        <p class="txtcontenu"><b>Symfony 6</b></p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="square m-1" id="vs">
+                        <p class="txtcontenu"><b>VisualStudio</b></p>
+                    </div>
+                    <div class="square m-1" id="vscode">
+                        <p class="txtcontenu"><b>VS Code</b></p>
+                    </div>
+                    <div class="square m-1" id="trello">
+                        <p class="txtcontenu"><b>Trello</b></p>
+                    </div>
+                    <div class="square m-1" id="figma">
+                        <p class="txtcontenu"><b>Figma</b></p>
+                    </div>
+                    <div class="square m-1" id="wamp">
+                        <p class="txtcontenu"><b>WampServer</b></p>
+                    </div>
+                    <div class="square m-1" id="wordpress">
+                        <p class="txtcontenu"><b>WordPress</b></p>
+                    </div>
+                    <div class="square m-1" id="github">
+                        <p class="txtcontenu"><b>GitHub</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-20 py-2">
+                <div class="d-flex flex-wrap justify-content-arround">
+                    <div class="m-1 p-1 shadow d-flex align-items-center w-40 bg-salmon">
+                        <div class="d-flex flex-col px-2">
+                            <h3 class="p-1 text-blue">Informatique</h3>
+                            <p class="font-small py-02 text-blue"><b>Pix</b> 768 points</p>
+                            <p class="font-small py-02 text-blue"><b>Logiciel</b> Maintenance Linux et Microsoft</p>
+                            <p class="font-small py-02 text-blue"><b>Matériel</b> Entretien et montage matériel</p>
+                        </div>
+                    </div>
+                    <div class="m-1 p-1 shadow d-flex align-items-center w-40 bg-salmon">
+                        <div class="d-flex flex-col px-2">
+                            <h3 class="p-1 text-blue">Social</h3>
+                            <p class="font-small py-02 text-blue"><b>Activités associatives</b> au sein de l'université</p>
+                            <p class="font-small py-02 text-blue"><b>Commerce</b> diverses expériences en grande distribution et boutiques indépendantes</p>
+                            <p class="font-small py-02 text-blue"><b>Service à la personne</b> garde d'enfants & ménages</p>
+                        </div>
+                    </div>
+                    <div class="m-1 p-1 shadow d-flex align-items-center w-40 bg-salmon">
+                        <div class="d-flex flex-col px-2">
+                            <h3 class="p-1 text-blue">Culture</h3>
+                            <p class="font-small py-02 text-blue"><b>Formation universitaire</b> bonnes capacités rédactionnelles</p>
+                            <p class="font-small py-02 text-blue"><b>Langues</b> anglais niveau B2 & espagnol scolaire</p>
+                            <p class="font-small py-02 text-blue"><b>Culture générale</b> intéressée par les arts, la littérature, l'histoire et les sciences</p>
+                        </div>
+                    </div>
+                    <div class="m-1 p-1 shadow d-flex align-items-center w-40 bg-salmon">
+                        <div class="d-flex flex-col px-2">
+                            <h3 class="p-1 text-blue">Loisirs</h3>
+                            <p class="font-small py-02 text-blue"><b>Jeux</b> jeux vidéo et jeux de plateau</p>
+                            <p class="font-small py-02 text-blue"><b>Loisirs créatifs</b> travaux d'aiguilles, travail du bois</p>
+                            <p class="font-small py-02 text-blue"><b>Loisirs de plein air</b> jardinage & maraîchage</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="formation"></div> 
+            </div>
+        </section>
+        <section>
+            <div class="bg-blue d-flex justify-content-between align-items-center px-20 py-2 responsive-title">
+                <h2 class="text-white">Formation</h2>
+                <img src="assets/images/icones/education.png" alt="" class="mini">
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="border-right px-2">
+ 
+                </div>
+                <div class="d-flex justify-content-center flex-col px-2 py-2">
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Septembre 2022 - Août 2023</b></p>
+                        <h4 class="py-02 text-blue">Titre professionnel | Conceptrice développeuse d'applications</h4>
+                        <p class="px-2 text-blue">Afpa Mornac (16)</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Octobre 2016 - Juillet 2017</b></p>
+                        <h4 class="py-02 text-blue">CAP ébéniste</h4>
+                        <p class="px-2 text-blue">MARPEN Tusson (16)</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Septembre 2011 - Juillet 2014</b></p>
+                        <h4 class="py-02 text-blue">Licence de sciences humaines | Philosophie</h4>
+                        <p class="px-2 text-blue">Université de Poitiers (86)</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Septembre 2007 - Juillet 2011</b></p>
+                        <h4 class="py-02 text-blue">Baccalauréat général | Economique et social option mathématiques</h4>
+                        <p class="px-2 text-blue" id="experience">Lycée Jean-Monnet Cognac (16)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-blue d-flex justify-content-between align-items-center px-20 py-2 responsive-title">
+                <h2 class="text-white">Expérience</h2>
+                <img src="assets/images/icones/mallette.png" alt="" class="mini">
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center flex-col px-2 py-5">
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Mai 2020 - Mars 2022</b></p>
+                        <h4 class="py-02 text-blue">Ouvrière agricole</h4>
+                        <p class="px-2 text-blue">EARL des Courgeas (16)</p>
+                        <p class="px-2 text-blue">Tâches saisonnières dans les vignes, conduite d'engins agricoles</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Juin 2019 - Février 2020</b></p>
+                        <h4 class="py-02 text-blue">Ouvrière agricole</h4>
+                        <p class="px-2 text-blue">SARL Boisson (16)</p>
+                        <p class="px-2 text-blue">Différents contrats saisonniers ; travaux dans les vignes, vinification, distillation</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Mai 2018 - Août 2018</b></p>
+                        <h4 class="py-02 text-blue">Employée polyvalente de nuit</h4>
+                        <p class="px-2 text-blue">Hôtel Première Classe (86)</p>
+                        <p class="px-2 text-blue">Accueil des clients - gestion des réservations - ménage - préparation des buffets - encaissement</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Juillet 2017</b></p>
+                        <h4 class="py-02 text-blue">Opératrice</h4>
+                        <p class="px-2 text-blue">Manpower Cognac (16)</p>
+                        <p class="px-2 text-blue">Travail sur les chaînes de mise en bouteille</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Juin 2014 - Février 2016</b></p>
+                        <h4 class="py-02 text-blue">Ouvrière agricole</h4>
+                        <p class="px-2 text-blue">SARL Boisson (16)</p>
+                        <p class="px-2 text-blue">Différents contrats saisonniers - tirage des bois - relevages</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Juillet 2013 - Septembre 2013</b></p>
+                        <h4 class="py-02 text-blue">Opératrice</h4>
+                        <p class="px-2 text-blue">SARL P. du Fief (16)</p>
+                        <p class="px-2 text-blue">Travail sur différentes lignes - conditionnement des bouteilles</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Juin 2013 - Juillet 2013</b></p>
+                        <h4 class="py-02 text-blue">Ouvrière agricole</h4>
+                        <p class="px-2 text-blue">SARL Boisson (16)</p>
+                        <p class="px-2 text-blue">Relevages des bois</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Septembre 2012 - Avril 2013</b></p>
+                        <h4 class="py-02 text-blue">Agent périscolaire</h4>
+                        <p class="px-2 text-blue">Mairie de Poitiers (86)</p>
+                        <p class="px-2 text-blue">Animation du restaurant scolaire - surveillance des récréations et des siestes</p>
+                    </div>
+                    <div class="m-1 p-2 shadow bg-salmon">
+                        <p class="px-2 text-blue"><b>Juillet 2011 - Septembre 2011</b></p>
+                        <h4 class="py-02 text-blue">Employée commerciale</h4>
+                        <p class="px-2 text-blue">CODIS SAS (16)</p>
+                        <p class="px-2 text-blue">Mise en rayon - conseil au client</p>
+                    </div>
+                </div>
+                <div class="border-left px-2">
+ 
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="bg-blue d-flex justify-content-between align-items-center px-20 py-2 responsive-title">
+                <h2 class="text-white">Contact</h2>
+                <img src="assets/images/icones/lettre.png" alt="" class="mini">
+            </div>
+            <div class="d-flex justify-content-center px-20 py-5 d-none-mobile">
+                <div class="card-2 m-1">
+                    <div class="content" id="mail">
+                        <a href="mailto:mathilde.pdb@laposte.net" target="_blank">mathilde.pdb@laposte.net</a>
+                    </div>
+                </div>
+                <div class="card-2 m-1">
+                    <div class="content" id="github">
+                        <a href="https://github.com/MathildePDB" target="_blank">github.com/MathildePDB</a>
+                    </div>
+                </div>
+                <div class="card-2 m-1">
+                    <div class="content" id="linkedin">
+                        <a href="https://www.linkedin.com/in/mathilde-pdb/" target="_blank">linkedin.com/in/mathilde-pdb/</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center px-20 py-5 d-none-desktop">
+                <div class="m-1 card-responsive">
+                    <div class="content" id="mail">
+                        <a href="mailto:mathilde.pdb@laposte.net" target="_blank"><img src="assets/images/icones/mail2.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="m-1 card-responsive">
+                    <div class="content" id="github">
+                        <a href="https://github.com/MathildePDB" target="_blank"><img src="assets/images/icones/github.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="m-1 card-responsive">
+                    <div class="content" id="linkedin">
+                        <a href="https://www.linkedin.com/in/mathilde-pdb/" target="_blank"><img src="assets/images/icones/linkedin.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue d-flex justify-content-center align-items-center px-20 py-2">
+        <p class="text-white">Mathilde Pierre dit Blanchet | 2023</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.square {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.square:hover:before {
+    opacity: 0.5;
+}
+.square:hover .txtcontenu {
+    opacity: 1;
+}
+.square::before {
+    content: "";   
+    transition: 0.5s;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1; 
+}
+#html::before {
+    background: url("../assets/images/icones/html5.png");
+    background-position: 50% 100%;
+    background-size: cover;
+    z-index: 1;
+}
+#css::before {
+    background: url("../assets/images/icones/css-3.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#php::before {
+    background: url("../assets/images/icones/php.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#mysql::before {
+    background: url("../assets/images/icones/mysql.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#postgre::before {
+    background: url("../assets/images/icones/postgre.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#js::before {
+    background: url("../assets/images/icones/java-script.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#csharp::before {
+    background: url("../assets/images/icones/c-sharp.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#symfony::before {
+    background: url("../assets/images/icones/symfony6.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#vs::before {
+    background: url("../assets/images/icones/visual-studio.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#vscode::before {
+    background: url("../assets/images/icones/vscode.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#trello::before {
+    background: url("../assets/images/icones/trello.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#figma::before {
+    background: url("../assets/images/icones/figma.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#wamp::before {
+    background: url("../assets/images/icones/wamp-logo.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#wordpress::before {
+    background: url("../assets/images/icones/wordpress.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#github::before {
+    background: url("../assets/images/icones/github.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+#mail::before {
+    background: url("../assets/images/icones/mail.png");
+    background-position: 50% 100%;
+    background-size: cover;
+}
+.txtcontenu {
+    position: absolute;
+    left: 20;
+    top: 20;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;
+    font-size: 1rem;
+  }
