@@ -25,17 +25,39 @@ function myFunctionBurger() {
 }
 
 // hamburger menu
-var sidenav = document.getElementById("mySidenav");
-var openBtn = document.getElementById("openBtn");
-var closeBtn = document.getElementById("closeBtn");
+var sidenav = document.getElementById("mySidenav"); // menu
+var items = document.querySelectorAll("item"); // menuItems
+var openBtn = document.getElementById("openBtn"); // hamburger
+var closeBtn = document.getElementById("closeBtn"); // closeIcon
+var menu = document.getElementById("navbar-hamburger"); // menuIcon
 
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
+// openBtn.onclick = openNav;
+// closeBtn.onclick = closeNav;
 
-function openNav() {
-  sidenav.classList.add("active");
+// function openNav() {
+//   sidenav.classList.add("active");
+// }
+
+// function closeNav() {
+//   sidenav.classList.remove("active");
+// }
+
+function toggleMenu() {
+  if (sidenav.classList.contains("showMenu")) {
+    sidenav.classList.add("showMenu");
+    closeBtn.style.display = "block";
+    openBtn.style.display = "none";
+    sidenav.style.display = "block";
+  } else {
+    sidenav.classList.remove("showMenu");
+    closeBtn.style.display = "none";
+    openBtn.style.display = "block";
+    sidenav.style.display = "none";
+  }
 }
-
-function closeNav() {
-  sidenav.classList.remove("active");
-}
+openBtn.addEventListener("click", toggleMenu);
+items.forEach(
+  function(menuItem) {
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
