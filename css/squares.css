@@ -94,12 +94,16 @@
     background-position: 50% 100%;
     background-size: cover;
 }
-#github::before {
+#github::before,
+#github-link::before,
+#github-link-mobile::before {
     background: url("../assets/images/icones/github.png");
     background-position: 50% 100%;
     background-size: cover;
 }
-#mail::before {
+#mail::before,
+#mail-link::before,
+#mail-link-mobile::before {
     background: url("../assets/images/icones/mail.png");
     background-position: 50% 100%;
     background-size: cover;
